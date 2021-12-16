@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #222222;
+    text-align: left;
+    background-color:#eeeeee;
+}
+
+.menu li{
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+}
+.menu li.last{
+    float: right;
+    margin: 0;
+}
+.menu li a{
+    color: #222222;
+    font-weight: 500;
+}
+

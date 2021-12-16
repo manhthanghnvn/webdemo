@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo js</title>
+</head>
+<body>
+  <script type="text/javascript">
+      // var x; // khai báo biến bên js - dynamic data type
+      //     //number
+      // //string array
+      // x=10;
+      // x=x+10;
+      // console.log(x);
+      // x= "xin chao các bạn";
+      // console.log(x);
+      // if(x>10){
+      //
+      // } else{
+      //
+      // }
+      // for(var i=1; i<10;i++){
+      //   console.log("hello world");
+      // }
+      // var arr=[];
+      // arr[0]=1;
+      // arr[1]="xin chao";
+      // arr[2]=[];
+      // arr[2][1]=15;
+      // arr[2][1]="abcdd";
+
+      var ary = [3,23,45,2,4,6,7,9];
+        for(var i=0; i<ary.length-1;i++){
+            for(var j=1;j<ary.length-i-1;j++){
+                if(ary[j] > ary[j+1]){
+                    var tmp=ary[j];
+                    ary[j]=ary[j+1];
+                    ary[j+1]=tmp;
+                }
+            }
+        }
+         console.log("dãy sau sắp xếp:"+ary);
+
+      // //them 1 gia tri vao mang
+      ary[ary.length]=159;
+      console.log("sau khi them 159:"+ary);
+      //hay dung
+      ary.push(6);
+      console.log("sau khi them:"+ary);
+      console.log(ary);
+      //function
+      function tinhtong(a,b) {
+          return a + b;
+      }
+      //
+      // }
+      var c=tinhtong(5,6);
+      console.log("c="+c);
+      var d= tinhtong("xin chao","xin chao");
+      console.log(d);
+      inmenu(); //chỉ cần nằm cùng script
+      function inmenu(){
+          console.log("menu:");
+          console.log("1, food");
+
+      }
+      // alert("cấm trẻ em dưới 18 tuổi truy cập"); //cảnh báo
+      // var kq= confirm("are u sure?"); //return boolean
+      // console.log(kq);
+      // var p = prompt("what's your name?") // resturn string
+
+      // p= parseint(p); //convert to number int
+      // //18 = 18; 18abcnd=18; a232=NAN;
+
+      // // console.log(p);
+      // //nhap vao 2 so nguyen, tim ucln và bcnn cua 2 so do
+      // var p1 = prompt("nhập số thứ nhất");
+      // var p2 = prompt("nhập số thứ hai");
+      // p1= parseInt(p1);
+      // p2= parseInt(p2);
+      // for(var i=p1;i>=1;i--){
+      //     if(p1 % i == 0 && p2 % i == 0){
+      //         console.log("ucln:" + i);
+      //         break;
+      //     }
+      // }
+      // for(var i=p1; true;i++) {
+      //     if (i % p1 == 0 && i % p2 == 0) {
+      //         console.log("BCNN:" + i);
+      //         break;
+      //     }
+      // }
+
+// yêu cầu nhập một số nguyên
+      var n;
+      do{
+          n=prompt("nhap 1 so n:");
+          n=parseInt(n);
+
+      }while (isNaN(n));
+//Giả sử tạo 1 số nguyên ngẫu nhiên từ 0 đến 100 cho người dùng nhập 1 số trong khoảng đó, kiểm tra xem có trúng giải hay không và thông báo.
+//      function xoso(){
+//           var n;
+//           do{
+//               n= parseInt(prompt("nhap so may man"))
+//               if(isNaN(n)|| n<0) {
+//                   alert("Nhập số không chính xác, vui lòng nhập lại");
+//               }
+//           }while (isNaN(n)|| n<0);
+//           var r = parseInt(Math.random()*100);
+//           if(r == n) {
+//               alert("chuc mung bạn đã trúng giải");
+//           }else{
+//               alert("rất tiếc, chúc bạn may mắn lần sau");
+//              }
+//       }xoso();
+
+
+
+  </script>
+
+</body>
+</html>

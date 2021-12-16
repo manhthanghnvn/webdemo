@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tabmenu.css"/>
+</head>
+<body>
+<div>
+        <ul class="menu">
+            <li class="item" onclick="opentab(this);" onmouseout="closetab(this)" >
+                <a href="#">Home</a>
+                <ul class="submenu">
+                    <li>Demo sub 1</li>
+                </ul>
+            </li>
+            <li class="item" onclick="opentab(this);" onmouseout="closetab(this)">
+                <a href="#">Profile</a>
+                <ul class="submenu">
+                    <li>Demo sub 1</li>
+                </ul>
+            </li>
+            <li class="item" onclick="opentab(this);" onmouseout="closetab(this)">
+                <a href="#">Messenger</a>
+                <ul class="submenu">
+                    <li>Demo sub 1</li>
+                </ul>
+            </li>
+        </ul>
+</div>
+<script type="text/javascript">
+    function opentab(e) {
+        e.classList.add("active")
+    }
+    function closetab(e){
+        e.classList.remove("active");
+    }
+</script>
+</body>
+</html>
